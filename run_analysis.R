@@ -51,14 +51,14 @@ tidy <- data$merged_data[, c(1, 2, mean_std_column_numbers)]
 ## Appropriately labels the data set with descriptive activity names. 
 message("Renaming columns with mean() and std() to meaningful names")
 rename.column <- function(column) {
-  column <- gsub("tBody", "TimeBody", column)
-  column <- gsub("tGravity", "TimeGravity", column)
+  column <- gsub("tBody", "Time.Body", column)
+  column <- gsub("tGravity", "Time.Gravity", column)
   
-  column <- gsub("fBody", "FrequencyBody", column)
-  column <- gsub("fGravity", "FrequencyGravity", column)
+  column <- gsub("fBody", "Frequency.Body", column)
+  column <- gsub("fGravity", "Frequency.Gravity", column)
   
-  column <- gsub("\\-mean\\(\\)\\-", "Mean_", column)
-  column <- gsub("\\-std\\(\\)\\-", "Std_", column)
+  column <- gsub("\\-mean\\(\\)\\-", ".Mean.", column)
+  column <- gsub("\\-std\\(\\)\\-", ".Std.", column)
   
   column <- gsub("\\-mean\\(\\)", "Mean", column)
   column <- gsub("\\-std\\(\\)", "Std", column)
