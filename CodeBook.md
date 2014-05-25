@@ -9,7 +9,7 @@ A file named tidy.mean.txt is written from run_analysis.R.
 | ------------ | -------------------------------------------------------- | ------- |
 | Subject      | Identifier of the subject                                | integer |
 | Activity     | Label of the activity                                    | factor  |
-| MeanSamples  | Mean of variables by Subject + Activity provided in tidy | numeric |
+| Mean         | Mean of variables by Subject + Activity provided in tidy | numeric |
 
 ### Tidy
 
